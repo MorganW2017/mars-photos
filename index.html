@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Photos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to the Mars Photo Project!</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <form onsubmit="">
+                <div class="form-group col-sm-4">
+                    <label for="sol">SOL (day on mars)</label>
+                    <input placeholder="100" name="sol" type="number" class="form-control ">
+                    <button type="submit">Search!</button>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <form onsubmit="">
+                <div class="form-group col-sm-4">
+                    <label for="camera">Camera</label>
+                    <select name="camera" class="form-control">
+                        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                        <option value="MAST">Mast Camera</option>
+                        <option value="CHEMCAM">Chemistry and Camera Complex</option>
+                        <option value="MAHLI">Mars Hand Lens Imager</option>
+                        <option value="MARDI">Mars Descent Imager</option>  
+                        <option value="NAVCAM">Navigation Camera</option>
+                    </select>
+                    <button type="submit">Filter images</button>
+                </div>
+            </form>
+        </div>
+        <div class="row" id="gallery">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- EXTERNAL LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- SERVICES -->
+    <script src="app/nasa/nasa-service.js"></script>
+    <!-- CONTROLLER -->
+    <script src="app/nasa/nasa-controller.js"></script>
+    <!-- INIT -->
+    <script src="app/init.js"></script>
+
+</body>
+
+</html>
